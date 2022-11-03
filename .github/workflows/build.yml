@@ -34,7 +34,7 @@ jobs:
         name: Run tests
         uses: addnab/docker-run-action@v1
         with:
-          image: dataclass-map-and-log:latest
+          image: dataclass-map-and-log-testing:latest
           shell: sh 
           run: sh /app/run_tests_ci ${{ github.sha }} ${{ secrets.CODECOV_TOKEN }}
 
