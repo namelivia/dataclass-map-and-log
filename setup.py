@@ -5,12 +5,12 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
-    name="dataclass-man-and-log",
+    name="dataclass-map-and-log",
     version="0.1",
     description="Map objects to dataclasses and log differencies",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/namelivia/dataclass-man-and-log",
+    url="https://github.com/namelivia/dataclass-map-and-log",
     author="José Ignacio Amelivia Santiago",
     author_email="jignacio.amelivia@gmail.com",
     classifiers=[
@@ -26,6 +26,6 @@ setup(
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     python_requires=">=3.8, <4",
     project_urls={
-        "Bug Reports": "https://github.com/namelivia/dataclass-man-and-log/issues",
+        "Bug Reports": "https://github.com/namelivia/dataclass-map-and-log/issues",
     },
 )
