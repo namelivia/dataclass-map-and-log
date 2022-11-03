@@ -44,3 +44,14 @@ data = {
 
 definition = DataclassMapper.map(Parent, data)
 ```
+
+You can then access the dataclass instance like:
+```python
+definition.single_child.name
+```
+
+And you would have gotten the following warning log messages:
+```
+"Unexpected attribute extra on class <class 'tests.test_dataclass_map_and_log.Parent'> with value parent_extra_data",
+"Unexpected attribute extra on class <class 'tests.test_dataclass_map_and_log.Child'> with value child_extra_data",
+```
