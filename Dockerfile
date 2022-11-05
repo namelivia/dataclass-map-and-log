@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . /app
 RUN apk update
 RUN apk add gcc musl-dev git
-RUN pip install pipenv
+RUN pip install -I pipenv==2022.10.25
 
 FROM builder AS development
 RUN pipenv install --dev
