@@ -21,7 +21,7 @@ class DataclassMapper:
                     "Unexpected attribute %s on class %s with value %s",
                     attr,
                     _class,
-                    value,
+                    "None" if value is None else value,
                 )
         return filtered_data
 

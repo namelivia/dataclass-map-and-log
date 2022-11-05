@@ -49,6 +49,20 @@ class TestDataclassMapper:
             "Unexpected attribute another on class <class 'tests.test_dataclass_map_and_log.Definition'> with value bar"
         ] == [rec.message for rec in caplog.records]
 
+    def test_none_values_rendering(self, caplog):
+        data = {"name": "foo", "another": None, "surname": "qix"}
+        caplog.set_level(logging.WARNING)
+
+        # The dictionary is correctly mappped
+        definition = DataclassMapper.map(Definition, data)
+        assert definition.name == "foo"
+        assert definition.surname == "qix"
+
+        # And extra attributes are logged
+        assert [
+            "Unexpected attribute another on class <class 'tests.test_dataclass_map_and_log.Definition'> with value None"
+        ] == [rec.message for rec in caplog.records]
+
     def test_mapping_a_list_object(self, caplog):
         data = {
             "definitions": [
