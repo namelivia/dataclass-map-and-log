@@ -6,7 +6,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="dataclass-map-and-log",
-    version="0.1.1",
+    version="0.1.2",
     description="Map objects to dataclasses and log differencies",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     keywords="dataclass, api",
-    install_requires=["pydantic"],
+    install_requires=["pydantic==1.8.2"],
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     python_requires=">=3.8, <4",
     project_urls={
