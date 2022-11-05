@@ -1,4 +1,4 @@
-# Dataclass Map And Log[![tag](https://img.shields.io/github/tag/namelivia/dataclass-map-and-log.svg)](https://github.com/namelivia/dataclass-map-and-log/releases) [![Build](https://github.com/namelivia/dataclass-map-and-log/workflows/Build/badge.svg)](https://github.com/namelivia/dataclass-map-and-log/actions?query=workflow%3ABuild) [![codecov](https://codecov.io/gh/namelivia/dataclass-map-and-log/branch/master/graph/badge.svg)](https://codecov.io/gh/namelivia/dataclass-map-and-log)
+# Dataclass Map And Log[![tag](https://img.shields.io/github/tag/namelivia/dataclass-map-and-log.svg)](https://github.com/namelivia/dataclass-map-and-log/releases) [![Build](https://github.com/namelivia/dataclass-map-and-log/actions/workflows/build.yml/badge.svg)](https://github.com/namelivia/dataclass-map-and-log/actions?query=workflow%3ABuild) [![codecov](https://codecov.io/gh/namelivia/dataclass-map-and-log/branch/master/graph/badge.svg)](https://codecov.io/gh/namelivia/dataclass-map-and-log)
 
 Map dictionaries to pydantic dataclasses, log any extra attributes.
 
