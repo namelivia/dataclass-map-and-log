@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     keywords="dataclass, api",
-    install_requires=["pydantic==2.7.1"],
+    install_requires=["pydantic==2.7.4"],
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     python_requires=">=3.8, <4",
     project_urls={
